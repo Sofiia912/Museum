@@ -1,0 +1,46 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @include page-grid;
+  @include content-padding-inline;
+
+  align-items: center;
+  margin-top: 9px;
+
+  @include on-tablet {
+    margin-top: 15px;
+  }
+
+  &__burger {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: start;
+    margin-right: 88px;
+    cursor: pointer;
+  }
+
+  &__logo {
+    @extend %heading-base;
+
+    grid-row: 1;
+    grid-column: 1 / -1;
+    justify-self: center;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    text-decoration: none;
+
+    @include on-tablet {
+      font-size: 36px;
+      grid-column: 4;
+    }
+
+    @include on-desktop {
+      grid-column: 6;
+    }
+  }
+}

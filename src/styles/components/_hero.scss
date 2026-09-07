@@ -1,0 +1,119 @@
+.hero {
+  @include page-grid;
+
+  align-items: center;
+  margin-bottom: 70px;
+
+  @include on-tablet {
+    margin-bottom: 88px;
+  }
+
+  @include on-desktop {
+    margin-bottom: 200px;
+  }
+
+  &__img-wrapper {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: 320px;
+
+    @include on-tablet {
+      grid-column: 4 / -1;
+      height: 384px;
+    }
+
+    @include on-desktop {
+      grid-column: 6 / -1;
+      height: 655px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom right;
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-inline: $mobile-padding-inline;
+
+    @include on-tablet {
+      margin: 0;
+      grid-column: 1 / 4;
+      grid-row: 1;
+      gap: 38px;
+      align-items: flex-start;
+      align-self: end;
+      margin-bottom: 19px;
+      padding-inline: 0;
+
+      @include content-padding-inline-start;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / 6;
+      gap: 89px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @include on-tablet {
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include on-tablet {
+      text-align: left;
+    }
+  }
+
+  &__side-label {
+    display: none;
+
+    @include on-desktop {
+      margin-top: 55px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__side-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: $font-small;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $color-grey;
+  }
+
+  &__side-line {
+    width: 1px;
+    height: 70px;
+    background-color: $line;
+  }
+}

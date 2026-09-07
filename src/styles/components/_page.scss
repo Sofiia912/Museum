@@ -1,0 +1,10 @@
+.page {
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    padding: 0;
+    min-width: $mobile-min-width;
+    background: $color-white;
+  }
+}
