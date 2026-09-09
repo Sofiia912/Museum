@@ -23,15 +23,13 @@
   }
 
   &__logo {
-    @extend %heading-base;
+    @extend %logo-style;
 
     grid-row: 1;
     grid-column: 1 / -1;
     justify-self: center;
 
-    font-weight: 700;
     font-size: 30px;
-    line-height: 100%;
     text-decoration: none;
 
     @include on-tablet {

@@ -3,6 +3,14 @@
   color: $color-black;
 }
 
+%logo-style {
+  @extend %heading-base;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
 %list-reset {
   margin: 0;
   padding: 0;
@@ -33,10 +41,26 @@
   }
 }
 
+%text-small {
+  font-family: $font-small;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 14px;
+  color: $color-black;
+}
+
+%text-caption {
+  font-family: $font-small;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 141%;
+}
+
 %h1 {
   font-weight: 700;
   font-size: 45px;
   line-height: 100%;
+  margin: 0;
 
   @extend %heading-base;
 
@@ -54,6 +78,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 100%;
+  margin: 0;
 
   @extend %heading-base;
 
@@ -66,6 +91,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
+  margin: 0;
 
   @extend %heading-base;
 
