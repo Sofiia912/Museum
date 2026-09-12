@@ -43,26 +43,26 @@
 
 %text-small {
   font-family: $font-small;
+  font-size: 14px;
   font-weight: 400;
   line-height: 150%;
-  font-size: 14px;
   color: $color-black;
 }
 
 %text-caption {
   font-family: $font-small;
-  font-weight: 300;
   font-size: 12px;
+  font-weight: 300;
   line-height: 141%;
 }
 
 %h1 {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 100%;
-  margin: 0;
-
   @extend %heading-base;
+
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 100%;
 
   @include on-tablet {
     font-size: 54px;
@@ -75,12 +75,12 @@
 }
 
 %h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 100%;
-  margin: 0;
-
   @extend %heading-base;
+
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
 
   @include on-tablet {
     font-size: 48px;
@@ -88,12 +88,12 @@
 }
 
 %h3 {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 100%;
-  margin: 0;
-
   @extend %heading-base;
+
+  margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 100%;
 
   @include on-tablet {
     font-size: 36px;

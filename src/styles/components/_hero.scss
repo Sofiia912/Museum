@@ -30,30 +30,33 @@
 
   &__img {
     display: block;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     object-position: bottom right;
   }
 
   &__content {
+    display: flex;
     grid-column: 1 / -1;
     grid-row: 2;
-    margin-top: 20px;
-
-    display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
+    align-items: center;
+
+    margin-top: 20px;
     padding-inline: $mobile-padding-inline;
 
     @include on-tablet {
-      margin: 0;
       grid-column: 1 / 4;
       grid-row: 1;
       gap: 38px;
       align-items: flex-start;
       align-self: end;
+
+      margin: 0;
       margin-bottom: 19px;
       padding-inline: 0;
 
@@ -73,14 +76,14 @@
     width: 100%;
 
     @include on-tablet {
-      justify-content: space-between;
       align-items: flex-start;
+      justify-content: space-between;
     }
   }
 
   &__title {
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
 
     @include on-tablet {
       text-align: left;
@@ -95,23 +98,25 @@
     display: none;
 
     @include on-desktop {
-      margin-top: 55px;
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 20px;
+      align-items: center;
+
+      margin-top: 55px;
     }
   }
 
   &__side-text {
-    writing-mode: vertical-rl;
     transform: rotate(180deg);
+
+    writing-mode: vertical-rl;
     font-family: $font-small;
-    font-weight: 700;
     font-size: 14px;
+    font-weight: 700;
     line-height: 100%;
-    text-transform: uppercase;
     color: $color-grey;
+    text-transform: uppercase;
   }
 
   &__side-line {

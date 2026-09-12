@@ -1,31 +1,29 @@
 .aside {
   box-sizing: border-box;
+  height: 100vh;
   color: $color-white;
   background: $aside-overlay-bg;
-  height: 100vh;
 
   &__wrap {
     @include page-grid;
 
     row-gap: 24px;
-
     padding-top: 27px;
     padding-bottom: 27px;
     background-color: $color-dark-green;
 
     @include on-tablet {
-      min-height: auto;
       row-gap: 0;
+      min-height: auto;
       padding-top: 40px;
       padding-bottom: 40px;
     }
   }
 
   &__top {
-    grid-row: 1;
-    grid-column: 1 / -1;
-
     display: flex;
+    grid-column: 1 / -1;
+    grid-row: 1;
     flex-direction: row;
     gap: 28px;
     align-items: flex-start;
@@ -58,13 +56,12 @@
   }
 
   &__nav-link {
-    text-decoration: none;
-    color: $color-white;
-
     font-family: $font-small;
     font-size: 16px;
     font-weight: 500;
     line-height: 100%;
+    color: $color-white;
+    text-decoration: none;
 
     @include on-desktop {
       font-size: 22px;
@@ -72,24 +69,26 @@
   }
 
   &__close {
-    outline: none;
     cursor: pointer;
     display: flex;
+    outline: none;
   }
 
   &__line {
     display: block;
+    grid-column: 1 / -1;
+    grid-row: 2;
+
     height: 1px;
+
     background: $line-white;
 
-    grid-row: 2;
-    grid-column: 1 / -1;
-
     @include on-tablet {
-      grid-row: 1;
       grid-column: 4;
-      height: 100%;
+      grid-row: 1;
+
       width: 1px;
+      height: 100%;
       margin-left: -50%;
     }
 
@@ -99,14 +98,13 @@
   }
 
   &__section {
-    grid-row: 3;
     grid-column: 1 / -1;
+    grid-row: 3;
 
     @include on-tablet {
-      grid-row: 1;
-      grid-column: 4 / -1;
-
       display: grid;
+      grid-column: 4 / -1;
+      grid-row: 1;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto 1fr;
       row-gap: 20px;
@@ -120,14 +118,14 @@
     &-title {
       @extend %text-caption;
 
+      margin-bottom: 20px;
       font-size: 14px;
       font-weight: 400;
       color: $color-white;
-      margin-bottom: 20px;
 
       @include on-tablet {
-        grid-row: 1;
         grid-column: 1 / -1;
+        grid-row: 1;
         margin-bottom: 0;
       }
     }
@@ -138,12 +136,12 @@
 
     @extend %text-small;
 
-    color: $color-white;
     margin-bottom: 16px;
+    color: $color-white;
 
     @include on-tablet {
-      grid-row: 2;
       grid-column: span 2;
+      grid-row: 2;
       margin-bottom: 0;
     }
   }
@@ -159,9 +157,8 @@
     color: $color-white;
 
     @include on-tablet {
-      grid-row: 2;
       grid-column: span 2;
-
+      grid-row: 2;
       margin-left: 26px;
     }
 

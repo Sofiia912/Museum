@@ -19,6 +19,7 @@
 
   &__list {
     @extend %list-reset;
+
     @include page-grid;
 
     row-gap: 60px;
