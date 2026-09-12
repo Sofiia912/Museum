@@ -1,5 +1,6 @@
 .page {
   scroll-behavior: smooth;
+  background: $color-white;
 
   &__body {
     margin: 0;
@@ -7,4 +8,28 @@
     min-width: $mobile-min-width;
     background: $color-white;
   }
+
+  &__menu {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+
+    pointer-events: none;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition:
+      transform $effect-duration ease,
+      opacity $effect-duration ease;
+
+    &:target {
+      pointer-events: all;
+      overflow: hidden;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.page:has(.page__menu:target) {
+  overflow: hidden;
 }

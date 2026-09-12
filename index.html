@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="uk"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -38,7 +41,7 @@
       <a
         href="#menu"
         class="header__burger"
-        aria-label="Open menu"
+        aria-label="Відкрити меню"
       >
         <span class="icon icon--menu"></span>
       </a>
@@ -70,10 +73,15 @@
         </h1>
 
         <div class="hero__wrap">
-          <div class="hero__side-label">
-            <span class="hero__side-text">Події</span>
-            <span class="hero__side-line"></span>
-          </div>
+          <a
+            href="#events"
+            class="hero__link"
+          >
+            <div class="hero__side-label">
+              <span class="hero__side-text">Події</span>
+              <span class="hero__side-line"></span>
+            </div>
+          </a>
 
           <a
             href="#"
@@ -87,6 +95,97 @@
         </div>
       </div>
     </section>
+
+    <aside
+      class="aside page__menu"
+      id="menu"
+    >
+      <div class="aside__wrap container">
+        <div class="aside__top">
+          <a
+            href="#"
+            class="aside__close"
+            aria-label="Закрити меню"
+          >
+            <span class="icon icon--close"></span>
+          </a>
+
+          <nav class="aside__nav">
+            <ul class="aside__nav-list">
+              <li class="aside__nav-item">
+                <a
+                  href="#gallery"
+                  class="aside__nav-link"
+                >
+                  Галерея
+                </a>
+              </li>
+              <li class="aside__nav-item">
+                <a
+                  href="#subs"
+                  class="aside__nav-link"
+                >
+                  Про Нас
+                </a>
+              </li>
+              <li class="aside__nav-item">
+                <a
+                  href="#events"
+                  class="aside__nav-link"
+                >
+                  Виставки та
+                  <br />
+                  події
+                </a>
+              </li>
+              <li class="aside__nav-item">
+                <a
+                  href="#contacts"
+                  class="aside__nav-link"
+                >
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <span class="aside__line"></span>
+
+        <div class="aside__section">
+          <h3 class="aside__section-title">Графік роботи</h3>
+          <ul class="aside__schedule-list">
+            <li class="aside__schedule-item">
+              <span class="aside__schedule-hours">12:00 — 20:00</span>
+              середа
+            </li>
+            <li class="aside__schedule-item">
+              <span class="aside__schedule-hours">12:00 — 20:00</span>
+              четвер
+            </li>
+            <li class="aside__schedule-item">
+              <span class="aside__schedule-hours">12:00 — 20:00</span>
+              п’ятниця
+            </li>
+            <li class="aside__schedule-item">
+              <span class="aside__schedule-hours">11:00 — 19:00</span>
+              субота
+            </li>
+            <li class="aside__schedule-item">
+              <span class="aside__schedule-hours">11:00 — 19:00</span>
+              неділя
+            </li>
+          </ul>
+
+          <p class="aside__note">
+            <span class="aside__note-bold">Вихідні:</span>
+            понеділок, вівторок
+            <br />
+            Каса припиняє роботу за 1 годину до закриття музею
+          </p>
+        </div>
+      </div>
+    </aside>
 
     <section
       class="events container"
@@ -185,7 +284,7 @@
       class="gallery"
       id="gallery"
     >
-      <h2>Галерея</h2>
+      
     </section>
 
     <section class="subs">
@@ -282,7 +381,7 @@
         </ul>
 
         <p class="footer__schedule-note">
-          Вихідні понеділок, вівторок
+          Вихідні: понеділок, вівторок
           <br />
           Каса припиняє роботу за 1 годину
           <br />
