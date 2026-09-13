@@ -109,7 +109,6 @@
     color: $color-grey;
 
     background-color: $color-white;
-
     outline: none;
 
     &::placeholder {
@@ -120,12 +119,11 @@
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0 1000px $color-white inset !important;
-      -webkit-text-fill-color: $color-grey !important;
-
       font-family: $font-small !important;
-
+      -webkit-box-shadow: 0 0 0 1000px $color-white inset !important;
       transition: background-color $effect-duration ease-in-out 0s;
+
+      -webkit-text-fill-color: $color-grey !important;
     }
   }
 
