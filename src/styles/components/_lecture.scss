@@ -40,18 +40,18 @@
     display: flex;
 
     max-width: 380px;
-    margin-top: -50px;
+    margin-top: -60px;
     margin-inline: auto;
 
     @include on-tablet {
       max-width: 570px;
-      margin-top: -70px;
+      margin-top: -85px;
       padding-inline: 0;
     }
 
     @include on-desktop {
       max-width: 680px;
-      margin-top: -80px;
+      margin-top: -102px;
     }
   }
 
