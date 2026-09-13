@@ -129,6 +129,8 @@
 
     background-color: $color-red;
 
+    @include hover(transform, scale($scale));
+
     @include on-tablet {
       flex: 0 0 70px;
     }
@@ -142,6 +144,8 @@
       background-image: url(../images/icons/arrow-black.svg);
       background-repeat: no-repeat;
       background-position: center;
+
+      @include hover(transform, translateX(4px));
     }
   }
 }

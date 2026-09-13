@@ -9,6 +9,8 @@
   background-position: center;
   background-size: contain;
 
+  transition: background-color $effect-duration ease;
+
   &--menu {
     background-image: url(../images/icons/burger-menu.svg);
   }
@@ -19,9 +21,21 @@
 
   &--fb {
     background-image: url(../images/icons/facebook.svg);
+
+    @include hover(
+      filter,
+      invert(31%) sepia(12%) saturate(2250%) hue-rotate(118deg) brightness(91%)
+        contrast(88%)
+    );
   }
 
   &--ig {
     background-image: url(../images/icons/instagram.svg);
+
+    @include hover(
+      filter,
+      invert(31%) sepia(12%) saturate(2250%) hue-rotate(118deg) brightness(91%)
+        contrast(88%)
+    );
   }
 }

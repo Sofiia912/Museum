@@ -84,7 +84,7 @@
           </a>
 
           <a
-            href="#"
+            href="#subs"
             class="hero__button button"
           >
             <span class="button__text">Квитки</span>
@@ -281,13 +281,51 @@
     </section>
 
     <section
-      class="gallery"
+      class="gallery container"
       id="gallery"
     >
-      
+      <h2 class="gallery__title">Галерея</h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--one">
+            <img
+              src="./src/images/paintings/painting-9.jpg"
+              alt="Картина 1"
+              class="swiper-slide-img"
+            />
+          </div>
+
+          <div class="swiper-slide swiper-slide--two">
+            <img
+              src="./src/images/paintings/painting-6.png"
+              alt="Картина 2"
+              class="swiper-slide-img"
+            />
+          </div>
+
+          <div class="swiper-slide swiper-slide--three">
+            <img
+              src="./src/images/paintings/painting-4.jpg"
+              alt="Картина 3"
+              class="swiper-slide-img"
+            />
+          </div>
+
+          <div class="swiper-slide swiper-slide--four">
+            <img
+              src="./src/images/paintings/painting-8.png"
+              alt="Картина 4"
+              class="swiper-slide-img"
+            />
+          </div>
+        </div>
+
+        <div class="swiper-dots"></div>
+      </div>
     </section>
 
-    <section class="subs">
+    <section class="subs" id="subs">
       <div class="subs__wrap container">
         <div class="subs__info">
           <h2 class="subs__title">Підписка</h2>
@@ -303,6 +341,7 @@
         >
           <input
             type="email"
+            name="email"
             class="subs__input"
             placeholder="E-mail"
             required
@@ -445,7 +484,7 @@
         <ul class="footer__nav-list">
           <li class="footer__nav-item">
             <a
-              href="#"
+              href="#gallery"
               class="footer__nav-link"
             >
               Галерея
@@ -453,7 +492,7 @@
           </li>
           <li class="footer__nav-item">
             <a
-              href="#"
+              href="#subs"
               class="footer__nav-link"
             >
               Про Нас
@@ -461,7 +500,7 @@
           </li>
           <li class="footer__nav-item">
             <a
-              href="#"
+              href="#events"
               class="footer__nav-link"
             >
               Виставки та події
@@ -469,7 +508,7 @@
           </li>
           <li class="footer__nav-item">
             <a
-              href="#"
+              href="#contacts"
               class="footer__nav-link"
             >
               Контакти
@@ -486,6 +525,9 @@
       </div>
     </footer>
 
-    <script src="src/scripts/main.js"></script>
+    <script
+      type="module"
+      src="src/scripts/main.js"
+    ></script>
   </body>
 </html>

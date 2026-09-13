@@ -10,6 +10,8 @@
 
   text-decoration: none;
 
+  @include hover(transform, scale($scale));
+
   @include on-tablet {
     width: 270px;
     height: 70px;
@@ -40,6 +42,13 @@
       width: 8px;
       height: 12px;
       background-image: url(../images/icons/arrow.svg);
+      transition: transform $effect-duration;
+
+      @include hover(transform, translateX(4px));
+    }
+
+    @include on-tablet {
+      width: 70px;
     }
   }
 }

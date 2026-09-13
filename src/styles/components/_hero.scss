@@ -92,6 +92,28 @@
 
   &__link {
     text-decoration: none;
+
+    @include hover(transform, scale(1.1));
+  }
+  &__side-text {
+    transform: rotate(180deg);
+
+    writing-mode: vertical-rl;
+    font-family: $font-small;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    color: $color-grey;
+    text-transform: uppercase;
+
+    transition: color $effect-duration;
+  }
+
+  &__side-line {
+    width: 1px;
+    height: 70px;
+    background-color: $line;
+    transition: background-color $effect-duration;
   }
 
   &__side-label {
@@ -105,23 +127,15 @@
 
       margin-top: 55px;
     }
-  }
 
-  &__side-text {
-    transform: rotate(180deg);
+    &:hover {
+      .hero__side-text {
+        color: $color-dark-green;
+      }
 
-    writing-mode: vertical-rl;
-    font-family: $font-small;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 100%;
-    color: $color-grey;
-    text-transform: uppercase;
-  }
-
-  &__side-line {
-    width: 1px;
-    height: 70px;
-    background-color: $line;
+      .hero__side-line {
+        background-color: $color-dark-green;
+      }
+    }
   }
 }
